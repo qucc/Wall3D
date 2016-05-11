@@ -1,0 +1,14 @@
+﻿<Window x:Class="TestActivator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestActivator"
+        mc:Ignorable="d"
+       Title="MainWindow" WindowStyle="None" WindowState="Maximized" ResizeMode="NoResize">
+    <Viewbox>
+        <Canvas x:Name="root" Width="5760" Height="1080" Background="Aqua" >
+           
+        </Canvas>
+    </Viewbox>
+</Window>
