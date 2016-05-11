@@ -56,11 +56,10 @@ namespace Wall3D
             m_tiles.Clear();
             double ratio = m_logos[0].Width / m_logos[0].Height;
             MeshGeometry3D mesh = new MeshGeometry3D();
-            mesh.Positions = Point3DCollection.Parse("0 0 0, 1 0 0, 1 1 0, 0 1 0");
             mesh.Positions.Add(new Point3D(0, 0, 0));
             mesh.Positions.Add(new Point3D(1, 0 , 0));
             mesh.Positions.Add(new Point3D(1, 1/ratio, 0));
-            mesh.Positions.Add(new Point3D(1, 1/ratio, 0));
+            mesh.Positions.Add(new Point3D(0, 1/ratio, 0));
             mesh.TriangleIndices = Int32Collection.Parse("0 1 2, 0 2 3");
             mesh.TextureCoordinates = PointCollection.Parse("0 1,1 1, 1 0, 0 0");
 
@@ -106,7 +105,7 @@ namespace Wall3D
                 tileModel3D.Material = materail;
 
                 Tile tile = new Tile();
-                tile.Translate = new TranslateTransform3D(0,-1, 0);
+                tile.Translate = new TranslateTransform3D(0,-1/ratio , 0);
                 tile.Rotate = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(0, 1, 0), i * angle), 0, 0, m_radius);
                 tile.Scale = new ScaleTransform3D(new Vector3D(Scale, Scale, 1), new Point3D(0.5, 1 / ratio / 2, 0));
                 m_tiles.Add(tile);
