@@ -22,8 +22,8 @@
                 <Label  Canvas.Left="7" Canvas.Top="513" Style="{StaticResource labelStyle}">Shift + C-> Remove Column</Label>
                 <Label  x:Name="settingTxt" Canvas.Left="10" Canvas.Top="703" Style="{StaticResource labelStyle}">0</Label>
 
-                <Button x:Name="saveBtn" Width="200" Height="100" Canvas.Left="450" Canvas.Top="900" Style="{StaticResource buttonStyle }" Click="saveBtn_Click">Save</Button>
-                <Button x:Name="resetBtn" Width="200" Height="100" Canvas.Left="113" Canvas.Top="900" Style="{StaticResource buttonStyle }" Click="resetBtn_Click">Reset</Button>
+                <Button x:Name="saveBtn" Width="200" Height="100" Canvas.Left="275" Canvas.Top="950" Style="{StaticResource buttonStyle }" Click="saveBtn_Click">Save</Button>
+                <Button x:Name="resetBtn" Width="200" Height="100" Canvas.Left="28" Canvas.Top="950" Style="{StaticResource buttonStyle }" Click="resetBtn_Click">Reset</Button>
 
             </Canvas>
         </Canvas>

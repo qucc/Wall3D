@@ -106,7 +106,7 @@ namespace Wall3D
                 tileModel3D.Material = materail;
 
                 Tile tile = new Tile();
-                tile.Translate = new TranslateTransform3D(0,-1,0);
+                tile.Translate = new TranslateTransform3D(0,-1, 0);
                 tile.Rotate = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(0, 1, 0), i * angle), 0, 0, m_radius);
                 tile.Scale = new ScaleTransform3D(new Vector3D(Scale, Scale, 1), new Point3D(0.5, 1 / ratio / 2, 0));
                 m_tiles.Add(tile);
@@ -166,6 +166,7 @@ namespace Wall3D
             GameSetting.Scale = Scale.ToString();
             GameSetting.CameraY = Camera_Y.ToString();
             GameSetting.CameraZ = Camera_Z.ToString();
+            GameSetting.Column = Column.ToString();
             GameSetting.Save();
         }
 
